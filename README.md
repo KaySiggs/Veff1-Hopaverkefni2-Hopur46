@@ -1,4 +1,4 @@
-# Veff1-Hopaverkefni2
+# Veff1-Hópaverkefni2-Hópur 
 
 Upplýsingar um hvernig á að keyra verkefnið:
 
