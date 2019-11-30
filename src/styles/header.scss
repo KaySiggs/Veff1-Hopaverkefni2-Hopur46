@@ -1,0 +1,42 @@
+@import "config";
+
+header {
+  background-color: $color-1;
+  background-size: cover;
+}
+
+.header {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+
+    height: 50vh;
+
+    margin-bottom: $gutter;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    * {
+      font-family: $font-heading;
+    }
+  }
+
+  &__text-thin {
+    font-weight: 300;
+  }
+
+  &__text-uppercase {
+    text-transform: uppercase;
+  }
+}

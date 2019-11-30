@@ -1,0 +1,15 @@
+@import "config";
+
+footer {
+  color: $color-0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: $font-heading;
+
+  margin-bottom: $gutter * 3;
+  
+  text-decoration: none;
+}

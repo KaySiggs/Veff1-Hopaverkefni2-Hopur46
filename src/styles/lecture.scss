@@ -1,0 +1,65 @@
+@import "config";
+
+.lecture {
+  
+  color: $color-0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  text-decoration: none;
+
+  background-color: $color-3;
+  transition: background-color $transition;
+
+  &:hover {
+    background-color: $color-2;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  &__category {
+    display: block;
+    position: relative;
+    font-family: $font-heading;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  &__info {
+    display: flex;
+    align-items: center;
+    padding: $gutter / 2;
+  }
+
+  &__meta {
+    flex: 1;
+  }
+
+  &__thumbnail {
+    align-items: center;
+    display: flex;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 2rem;
+    position: relative;
+  }
+
+  &__cleared {
+    color: $color-5;
+    font-size: 3rem;
+  }
+
+  &__thin {
+    font-weight: 300;
+  }
+}

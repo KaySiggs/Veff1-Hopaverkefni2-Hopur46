@@ -1,0 +1,34 @@
+$max-width: 1200px;
+$gutter: 20px;
+
+$color-0: #000;
+$color-1: #999;
+$color-2: #aaa;
+$color-3: #ccc;
+$color-4: #2d2;
+$color-5: #1a1;
+$color-6: #fcffd2;
+$color-7: #cc9694;
+
+$transition: 300ms ease-in-out;
+
+$font-main: "Lora", serif;
+$font-heading: "Roboto Mono", monospace;
+
+@mixin row() {
+    display: flex;
+  
+    margin-right: -($gutter / 2);
+    margin-left: -($gutter / 2);
+  }
+  
+@mixin clm($col: 1) {
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
+
+  width: ($col / 12 * 100) * 1%;
+}
+
+@mixin offset-left($cols: 0) {
+  margin-left: ($cols/12 * 100) * 1%;
+}

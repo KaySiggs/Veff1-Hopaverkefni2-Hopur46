@@ -1,0 +1,49 @@
+@import "config";
+
+.nav {
+
+  margin-bottom: $gutter;
+
+  &__button {
+    .button {
+      border: none;
+      padding: 0 20px;
+      margin: 0 15px;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: $font-heading;
+      height: 60px;
+      border-radius: 15px;
+      box-shadow: 0 2px 0 $color-2;
+      background-color: $color-3;
+      transition: background-color $transition, box-shadow $transition;
+
+      &:hover {
+        background-color: $color-2;
+      }
+
+      &--active {
+        background-color: $color-4;
+        box-shadow: 0 2px 0 $color-5;
+  
+        &:hover {
+          background-color: $color-5;
+        }
+      }
+    }
+  }
+
+  &__button-uppercase {
+    @extend .nav__button;
+    .button {
+      text-transform: uppercase;
+    }
+  }
+
+  &__row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

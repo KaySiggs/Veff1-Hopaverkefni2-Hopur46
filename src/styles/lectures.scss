@@ -1,0 +1,26 @@
+@import "config";
+
+.lectures {
+  margin: 0 auto;
+  max-width: $max-width;
+
+  @media (max-width: $max-width - 1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+
+  &__row {
+    @include row();
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    @include clm(4);
+
+    margin-bottom: $gutter * 2;
+
+    @media (max-width: 500px) {
+      @include clm(12);
+    }
+  }
+}
